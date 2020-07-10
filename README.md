@@ -2,6 +2,18 @@
 
 This project emulates a casino blackjack game for 1 player. Here you can find the rules for the game and how to play the game using the files contained.
 
+# How to use the python Ironhack Blackjack
+
+## 1. Do a clone
+Click on the green buton which says **clone** in https://github.com/aGimenezO/BlackJack-IH to Download the files into your machine.
+
+## 2. Open the files using the terminal
+Open a terminal and navigate to where you had the python files downloaded and extracted and use Python to execute the blackjack file with the command ```python Blackjack.py```
+
+## 3. Play the game!
+
+
+
 # Rules of Blackjack
 ## THE PACK
 The standard 52-card pack is used, but in most casinos several decks of cards are shuffled together. The six-deck game (312 cards) is the most popular. In addition, the dealer uses a blank plastic card, which is never dealt, but is placed toward the bottom of the pack to indicate when it will be time for the cards to be reshuffled. When four or more decks are used, they are dealt from a shoe (a box that allows the dealer to remove cards one at a time, face down, without actually holding one or more packs).
@@ -32,13 +44,3 @@ When the dealer has served every player, the dealers face-down card is turned up
 ## DOUBLING DOWN
 Another option open to the player is doubling their bet when the original two cards dealt total 9, 10, or 11. When the player's turn comes, they place a bet equal to the original bet, and the dealer gives the player just one card, which is placed face down and is not turned up until the bets are settled at the end of the hand. With two fives, the player may split a pair, double down, or just play the hand in the regular way. Note that the dealer does not have the option of splitting or doubling down.
 
-# How to use the python Ironhack Blackjack
-
-## 1. Do a clone
-Click on the green buton which says **clone** in https://github.com/aGimenezO/BlackJack-IH to Download the files into your machine.
-
-## 2. Open the files using the terminal
-Open a terminal and navigate to where you had the python files downloaded and extracted and use Python to execute the blackjack file with the command ```python Blackjack.py```
-
-## 3. Play the game!
-  
