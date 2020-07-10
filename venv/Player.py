@@ -1,5 +1,5 @@
 class Player:
-    def __init__(self, name, stack=500, is_human=True):
+    def __init__(self, name, stack=100, is_human=True):
         self.name = name
         self.stack = stack
         self.hand = []
@@ -20,7 +20,7 @@ class Player:
             print(f"{self.name}:{[str(card) for card in self.hand]} =  {self.get_hand_value()}\n")
 
     def hand_allows_double(self):
-        return self.get_hand_value() in [10, 11]
+        return self.get_hand_value() in [10, 11] and self.stack > self.amount_bet * 2
 
     def hand_allows_split(self):
         return len(self.hand) == 2 and self.hand[0].value == self.hand[1].value
@@ -58,21 +58,21 @@ class Player:
             while value > 21 and aces:
                 aces -= 1
                 value -= 10
-        return str(value)
+        return value
+
+    def has_blackjack(self):
+        return len(self.hand) == 2 and self.get_hand_value() == 21
 
     def input_bet_amount(self):
         try:
             bet_amount = eval(input(f"Which amount would you like to bet? Stack: {self.stack}€\n"))
         except Exception:
             print('A problem ocurred, please re-enter the amount you would like to bet\n')
-        bet_amount = 0
         if bet_amount <= 0:
             bet_amount = 0
         self.amount_bet = bet_amount
-        if bet_amount > self.stack:
-            return self.stack
-        return bet_amount
-
+        self.stack = max(0, self.stack - bet_amount)
+        return min(bet_amount, self.stack)
 
 class Dealer(Player):
     def __init__(self):
@@ -83,15 +83,15 @@ class Dealer(Player):
 
     def show_hand(self, showdown=False):
         if showdown:
-            print(f"{self.name}:{[str(card) for card in self.hand]} =  {self.get_hand_value()}\n")
+            print(f"{self.name}:{[str(card) for card in self.hand]} =  {self.get_hand_value(showdown=True)}\n")
         elif len(self.hand) > 1:
-            print(f"{self.name}:[?,{self.hand[1]}] =  {self.get_hand_value(showdown=True)} \n")
+            print(f"{self.name}:[?,{self.hand[1]}] =  {self.get_hand_value(showdown=False)} \n")
 
     def get_hand_value(self, showdown=False):
         value = 0
         value_aces = 0
         aces = 0
-        for card in self.hand[1:]:
+        for card in self.hand[1 - showdown:]:
             if card.value == 'A':
                 aces += 1
                 value += 11
@@ -103,4 +103,7 @@ class Dealer(Player):
             while value > 21 and aces:
                 aces -= 1
                 value -= 10
-        return str(value)
+        return value
+
+    def has_blackjack(self):
+        return len(self.hand) == 2 and self.get_hand_value(showdown=True) == 21
