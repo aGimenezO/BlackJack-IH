@@ -37,7 +37,7 @@ class Player:
         has enought stack to pay for another time the initial bet amount
         :return: Boolean
         """
-        return self.get_hand_value() in [9, 10, 11] and self.stack > self.amount_bet * 2
+        return self.get_hand_value() in [9, 10, 11] and self.stack > self.amount_bet
 
     def hand_allows_split(self):
         """
