@@ -35,9 +35,10 @@ Another option open to the player is doubling their bet when the original two ca
 # How to use the python Ironhack Blackjack
 
 ## 1. Do a clone
-Download the files into your machine
+Click on the green buton which says **clone** in https://github.com/aGimenezO/BlackJack-IH to Download the files into your machine.
 
-## 2. Open a terminal and use Python to execute the blackjack file with the command ```python Blackjack.py```
+## 2. Open the files using the terminal
+Open a terminal and navigate to where you had the python files downloaded and extracted and use Python to execute the blackjack file with the command ```python Blackjack.py```
 
 ## 3. Play the game!
   
