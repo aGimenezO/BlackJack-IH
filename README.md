@@ -1,4 +1,6 @@
 # BlackJack-IH
+This project emulates a casino blackjack game for 1 player. Here you can find the rules for the game and how to play the game using the files contained.
+
 ## Table of contents
 1.[ How to use the python Ironhack Barcelona game](#use_program)
 
@@ -22,7 +24,6 @@
   
   2.9. [Doubling down](#double)
 
-This project emulates a casino blackjack game for 1 player. Here you can find the rules for the game and how to play the game using the files contained.
 <a name="use_program"></a>
 # How to use the python Ironhack Blackjack
 
