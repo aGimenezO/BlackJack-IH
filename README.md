@@ -4,13 +4,16 @@ This project emulates a casino blackjack game for 1 player. Here you can find th
 
 # How to use the python Ironhack Blackjack
 
-## 1. Do a clone
+## 1. Clone
 Click on the green buton which says **clone** in https://github.com/aGimenezO/BlackJack-IH to Download the files into your machine.
 
-## 2. Open the files using the terminal
+## 2. Ensure you have python installed on your computer
+https://www.python.org/downloads/
+
+## 3. Open the files using the terminal
 Open a terminal and navigate to where you had the python files downloaded and extracted and use Python to execute the blackjack file with the command ```python Blackjack.py```
 
-## 3. Play the game!
+## 4. Play the game!
 
 
 
