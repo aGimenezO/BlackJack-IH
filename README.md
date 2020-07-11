@@ -1,15 +1,26 @@
 # BlackJack-IH
-1. [ How to use the python Ironhack Barcelona game](#use_program)
-2. [ Rules](#rules)
-  2.1 [Cards used] (#cards)
-  2.2 [Object of the game] (#object)
-  2.3 [Card values] (#values)
-  2.4 [Betting] (#betting)
-  2.5 [The deal] (#deal)
-  2.6 [Natural or Blackjack] (#natural)
-  2.7 [Playing] (#playing)
-  2.8 [Dealer's play] (#dealer)
-  2.9 [Doubling down] (#double)
+## Table of contents
+1.[ How to use the python Ironhack Barcelona game](#use_program)
+
+2.[ Rules](#rules)
+
+  2.1.[ Cards used](#cards)
+  
+  2.2. [Object of the game](#object)
+  
+  2.3. [Card values](#values)
+  
+  2.4. [Betting](#betting)
+  
+  2.5. [The deal](#deal)
+  
+  2.6. [Natural or Blackjack](#natural)
+  
+  2.7. [Playing](#playing)
+  
+  2.8. [Dealer's play](#dealer)
+  
+  2.9. [Doubling down](#double)
 
 This project emulates a casino blackjack game for 1 player. Here you can find the rules for the game and how to play the game using the files contained.
 <a name="use_program"></a>
@@ -28,7 +39,6 @@ Open a terminal and navigate to where you had the python files downloaded and ex
 
 
 <a name="rules"></a>
-
 # Rules of Blackjack
 <a name="cards"></a>
 ## THE PACK
